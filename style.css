@@ -1,6 +1,6 @@
 :root{
     --Bright-orange: hsl(31, 77%, 52%);
-    --Dark-cyan: hsl(184, 100%, 13%);
+    --Dark-cyan: hsl(184, 100%, 22%);
     --Very-dark-cyan: hsl(179, 100%, 13%);
     --Trnasparent-white: hsl(0, 0%, 100%, 0.75);
     --Very-light-grey: hsl(0, 0%, 95%);
@@ -17,11 +17,18 @@ body{
 }
 .car-se{
     background-color: var(--Bright-orange);
+    height: 45vh;
+    
 }
 .car-suv{
-    background-color: var(--Very-dark-cyan);
+    background-color: var(--Dark-cyan);
+    height: 45vh;
 }
 .car-lux{
     
-    background-color: var(--Dark-cyan);
+    background-color: var(--Very-dark-cyan);
+    height: 45vh;
+}
+article{
+    display: grid;
 }
