@@ -6,17 +6,28 @@
   --Very-light-grey: hsl(0, 0%, 95%);
   --Font-size: 15px;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
   font-size: var(--Font-size);
   text-align: justify;
 }
-.wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.conatiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 50vw;
+  margin-left: 25vw;
+  
+  
+}
+.wrap{
+    display: flex;
     height: 100vh;
+    width: 100%;
+    align-items: center;
 
-    width: 50vw;
-    padding-left: 25vw;
 }
 h1 {
   color: var(--Very-light-grey);
@@ -28,12 +39,16 @@ p {
   color: var(--Trnasparent-white);
   font-family: "Outfit", sans-serif;
   font-weight: 400;
+  line-height: 34px;
+  text-align: left;
+  padding-top: 8px;
 }
 .car-se {
   background-color: var(--Bright-orange);
   height: 45vh;
   padding-left: 25px;
   padding-top: 28px;
+  border
 }
 .car-suv {
   background-color: var(--Dark-cyan);
@@ -48,4 +63,36 @@ p {
   padding-top: 28px;
 }
 button {
+    width: 172px;
+    height: 51px;
+    border-radius: 31px;
+    border-style: none;
+    margin-left: 40px;
+}
+.btn-se{
+    color: var(--Bright-orange);
+}
+.btn-suv{
+    color: var(--Dark-cyan);
+}
+.btn-lux{
+    color: var(--Very-dark-cyan);
+}
+:hover.btn-se{
+    border: 3px solid var(--Trnasparent-white);
+    color: var(--Trnasparent-white);
+    background-color: var(--Bright-orange);
+    cursor: pointer;
+}
+:hover.btn-suv{
+    border: 3px solid var(--Trnasparent-white);
+    color: var(--Trnasparent-white);
+    background-color:var(--Dark-cyan);
+    cursor: pointer;
+}
+:hover.btn-lux{
+    border: 3px solid var(--Trnasparent-white);
+    color: var(--Trnasparent-white);
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
 }
