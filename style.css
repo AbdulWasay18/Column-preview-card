@@ -15,7 +15,7 @@ body {
   text-align: justify;
 }
 .conatiner {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   width: 50vw;
   margin-left: 25vw;
@@ -95,4 +95,13 @@ button {
     color: var(--Trnasparent-white);
     background-color: var(--Very-dark-cyan);
     cursor: pointer;
+}
+@media all and (max-width:500px) {
+  .conatiner{
+    display: grid;
+
+  }
+  .button{
+    margin-left: 106px;
+  }
 }
